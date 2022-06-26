@@ -1,0 +1,8 @@
+.gallery-ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-image {
+    list-style: none;
+}

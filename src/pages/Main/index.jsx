@@ -1,6 +1,6 @@
 import { useEffect, useState, useTransition } from "react";
 import { getAllArts } from "../../services/getAllArtsService";
-import { getImage } from "../../services/getImageService";
+import "./main.css";
 
 function Main() {
   const [isCatching, setTransition] = useTransition();
@@ -15,14 +15,14 @@ function Main() {
     });
   }, []);
   return (
-    <ul>
+    <ul className="gallery-ul">
       {isCatching ? (
         <p>loading...</p>
       ) : (
         artworks.map(
           (art) =>
             art["image_id"] && (
-              <li key={art.id}>
+              <li className="gallery-image" key={art.id}>
                 <img
                   src={`https://www.artic.edu/iiif/2/${art["image_id"]}/full/200,/0/default.jpg`}
                   alt="art"
