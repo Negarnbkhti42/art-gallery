@@ -1,8 +1,17 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 .gallery-ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    column-count: 5;
 }
 
 .gallery-image {
     list-style: none;
+    height: min-content;
 }

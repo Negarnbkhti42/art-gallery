@@ -24,7 +24,7 @@ function Main() {
             art["image_id"] && (
               <li className="gallery-image" key={art.id}>
                 <img
-                  src={`https://www.artic.edu/iiif/2/${art["image_id"]}/full/200,/0/default.jpg`}
+                  src={`https://www.artic.edu/iiif/2/${art["image_id"]}/full/270,/0/default.jpg`}
                   alt="art"
                 />
               </li>
