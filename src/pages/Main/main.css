@@ -6,12 +6,42 @@
 
 .gallery-ul {
     margin: auto;
-    padding: 0;
+    padding: 5px 10px;
     width: 100%;
-    column-count: 5;
+    column-count: 1;
+    column-gap: 5px;
 }
 
 .gallery-image {
     list-style: none;
     height: min-content;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-image img:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 321px) {
+    .gallery-ul {
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .gallery-ul {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .gallery-ul {
+        column-count: 4;
+    }
 }
