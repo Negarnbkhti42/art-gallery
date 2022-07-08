@@ -27,6 +27,9 @@ function Main() {
                   src={`https://www.artic.edu/iiif/2/${art["image_id"]}/full/270,/0/default.jpg`}
                   alt="art"
                 />
+                <div className="gallery-image_info">
+                  <p>{art.title}</p>
+                </div>
               </li>
             )
         )
