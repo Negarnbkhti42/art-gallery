@@ -9,13 +9,14 @@
     padding: 5px 10px;
     width: 100%;
     column-count: 1;
-    column-gap: 5px;
+    column-gap: 40px;
 }
 
 .gallery-image {
     list-style: none;
     height: min-content;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .gallery-image img {
